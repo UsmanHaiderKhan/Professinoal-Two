@@ -1,0 +1,80 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 02/04/2019 13:21
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-eyeglasses:before { content: "\f100"; }
+.flaticon-like:before { content: "\f101"; }
+.flaticon-idea:before { content: "\f102"; }
+.flaticon-talk:before { content: "\f103"; }
+.flaticon-chat:before { content: "\f104"; }
+.flaticon-talk-1:before { content: "\f105"; }
+.flaticon-eye:before { content: "\f106"; }
+.flaticon-behance-logo:before { content: "\f107"; }
+.flaticon-behance-logo-button:before { content: "\f108"; }
+.flaticon-dribbble-logo:before { content: "\f109"; }
+.flaticon-twitter-logo-button:before { content: "\f10a"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f10b"; }
+.flaticon-facebook-logo:before { content: "\f10c"; }
+.flaticon-google-plus-logo:before { content: "\f10d"; }
+.flaticon-linkedin-logo:before { content: "\f10e"; }
+.flaticon-skype-logo:before { content: "\f10f"; }
+.flaticon-vimeo:before { content: "\f110"; }
+.flaticon-tumblr-logo:before { content: "\f111"; }
+.flaticon-up-arrow:before { content: "\f112"; }
+.flaticon-wifi-signal:before { content: "\f113"; }
+    
+    $font-Flaticon-eyeglasses: "\f100";
+    $font-Flaticon-like: "\f101";
+    $font-Flaticon-idea: "\f102";
+    $font-Flaticon-talk: "\f103";
+    $font-Flaticon-chat: "\f104";
+    $font-Flaticon-talk-1: "\f105";
+    $font-Flaticon-eye: "\f106";
+    $font-Flaticon-behance-logo: "\f107";
+    $font-Flaticon-behance-logo-button: "\f108";
+    $font-Flaticon-dribbble-logo: "\f109";
+    $font-Flaticon-twitter-logo-button: "\f10a";
+    $font-Flaticon-twitter-logo-silhouette: "\f10b";
+    $font-Flaticon-facebook-logo: "\f10c";
+    $font-Flaticon-google-plus-logo: "\f10d";
+    $font-Flaticon-linkedin-logo: "\f10e";
+    $font-Flaticon-skype-logo: "\f10f";
+    $font-Flaticon-vimeo: "\f110";
+    $font-Flaticon-tumblr-logo: "\f111";
+    $font-Flaticon-up-arrow: "\f112";
+    $font-Flaticon-wifi-signal: "\f113";
