@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 02/04/2019 13:21
+  	Creation date: 08/04/2019 12:21
   	*/
 
 @font-face {
@@ -31,22 +31,12 @@ margin-left: 20px;
 }
 
 .flaticon-eyeglasses:before { content: "\f100"; }
-.flaticon-like:before { content: "\f101"; }
-.flaticon-idea:before { content: "\f102"; }
-.flaticon-talk:before { content: "\f103"; }
-.flaticon-chat:before { content: "\f104"; }
-.flaticon-talk-1:before { content: "\f105"; }
+.flaticon-idea:before { content: "\f101"; }
+.flaticon-twitter-logo-button:before { content: "\f102"; }
+.flaticon-tv:before { content: "\f103"; }
+.flaticon-stack-of-sheets:before { content: "\f104"; }
+.flaticon-photo-camera:before { content: "\f105"; }
 .flaticon-eye:before { content: "\f106"; }
-.flaticon-behance-logo:before { content: "\f107"; }
-.flaticon-behance-logo-button:before { content: "\f108"; }
-.flaticon-dribbble-logo:before { content: "\f109"; }
-.flaticon-twitter-logo-button:before { content: "\f10a"; }
-.flaticon-twitter-logo-silhouette:before { content: "\f10b"; }
-.flaticon-facebook-logo:before { content: "\f10c"; }
-.flaticon-google-plus-logo:before { content: "\f10d"; }
-.flaticon-linkedin-logo:before { content: "\f10e"; }
-.flaticon-skype-logo:before { content: "\f10f"; }
-.flaticon-vimeo:before { content: "\f110"; }
-.flaticon-tumblr-logo:before { content: "\f111"; }
-.flaticon-up-arrow:before { content: "\f112"; }
-.flaticon-wifi-signal:before { content: "\f113"; }
+.flaticon-tumblr:before { content: "\f107"; }
+.flaticon-facebook:before { content: "\f108"; }
+.flaticon-google-plus:before { content: "\f109"; }
