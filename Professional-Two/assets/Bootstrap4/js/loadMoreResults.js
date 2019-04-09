@@ -26,7 +26,7 @@
             displayedItems: 4,
             showItems: 4,
             button: {
-                'class': 'btn-load-more mt-50',
+                'class': 'btn-load-more mt-100 text-center',
                 text: 'View More'
             }
         };
