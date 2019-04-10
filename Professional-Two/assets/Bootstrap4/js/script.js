@@ -2,42 +2,42 @@
 
 /*================== Read More Text ==================*/
 
-//$(function () {
-//    var showChar = 210;
-//    var moretext = "Know More";
-//    var lesstext = "Know Less";
-//    $('.comments-space').each(function () {
-//        var content = $(this).html();
-//        if (content.length > showChar) {
-//            var show_content = content.substr(0, showChar);
-//            var hide_content = content.substr(showChar, content.length - showChar);
-//            var html = show_content +
-//                '<span class="remaining-contents"><span class=" p-3">' +
-//                hide_content +
-//                '</span>' +
-//                '<div class="text-center ml-37 media-ml-33">' +
-//                '<a href="" class="morelinksss text-center btn btn-know" style="display:block; margin-top:40px">' +
-//                moretext +
-//                '</a>' + '</div>' + '</span>';;
+$(function () {
+    var showChar = 120;
+    var moretext = "Continue Reading";
+    var lesstext = "Stop Reading";
+    $('.comments-space').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar) {
+            var show_content = content.substr(0, showChar);
+            var hide_content = content.substr(showChar, content.length - showChar);
+            var html = show_content +
+                '<span class="remaining-contents"><span class="">' +
+                hide_content +
+                '</span>' +
 
-//            $(this).html(html);
-//        }
-//    });
+                '<a href="" class="morelinksss contniue-reading read-style" style="display:block; margin-top:40px">' +
+                moretext +
+                '</a>' + '</span>';;
 
-//    $(".morelinksss").click(function () {
+            $(this).html(html);
+        }
+    });
 
-//        if ($(this).hasClass("less")) {
-//            $(this).removeClass("less");
-//            $(this).html(moretext);
-//        } else {
-//            $(this).addClass("less");
-//            $(this).html(lesstext);
-//        }
-//        $(this).parent().prev().toggle();
-//        $(this).prev().toggle();
-//        return false;
-//    });
-//});
+    $(".morelinksss").click(function () {
+
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
 $(function () {
     var showChar = 400;
     var moretext = "Read More &nbsp;";
@@ -49,7 +49,7 @@ $(function () {
             var hide_content = content.substr(showChar, content.length - showChar);
             var html = show_content + '<span class="remaining-contents"><span>' + hide_content + '</span>' +
 
-                '<a href="" class="morelinks btn btn-read mt-30" style="margin-left: 31%;;display:block;">' + moretext + '</a>'
+                '<a href="" class="morelinks btn btn-read mt-30 ml-31 media-ml-read" style="display:block;">' + moretext + '</a>'
                 + '</span>';
             $(this).html(html);
         }
@@ -85,22 +85,23 @@ $(function () {
 });
 
 /*===================== Load More Images ======================*/
-$(document).ready(function () {
+//$(document).ready(function () {
 
-    $('.loadMore').loadMoreResults({
-        displayedItems: 8,
-        showItems: 4
-    });
+//    $('.loadMore').loadMoreResults({
+//        displayedItems: 4,
+//        showItems: 4
+//    });
 
 
-});
+//});
 /*===================== Owl Carousle ======================*/
 
 $(function () {
     $('#owl-one').owlCarousel({
         loop: true,
-        margin: 90,
+        margin: 0,
         dots: true,
+
         nav: false,
         item: 1,
         responsiveClass: true,
@@ -170,19 +171,71 @@ $(function () {
         }
     });
 });
-
 /*===================== Slick Slider ======================*/
+$(function () {
+    $('.responsive').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 
+});
+/*===================== Load More Item ======================*/
+$(function () {
+    $(".display-no").slice(0, 4).show();
+    $("#load-more").on('click', function (e) {
+        e.preventDefault();
+        $(".display-no:hidden").slice(0, 4).slideDown();
+        if ($(".display-no:hidden").length == 0) {
+            $("#load-more").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().center
+        }, 1500);
+    });
+
+});
 
 /*===================== Scroll Top Function Script ======================*/
 $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll >= 100) {
-            $("#home nav").addClass("fixed-top sleep nav-bg-color");
+        if (scroll >= 700) {
+            $("nav").addClass("fixed-top sleep nav-bg-color");
 
         } else {
-            $("#home nav").removeClass("fixed-top sleep nav-bg-color");
+            $("nav").removeClass("fixed-top sleep nav-bg-color");
 
 
         }
