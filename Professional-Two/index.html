@@ -10,8 +10,11 @@
     <link href="assets/Bootstrap4/css/animate.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/Bootstrap4/css/slick.css" rel="stylesheet" />
+    <link href="assets/Bootstrap4/css/slick-theme.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/LightBox/dist/css/lightbox.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/jquery-ui.css" rel="stylesheet" />
+    <link href="assets/Bootstrap4/css/floating.labels.min.css" rel="stylesheet" />
     <link href="assets/font/flaticon.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/styles.css" rel="stylesheet" />
     <title>Professional Theme | Two</title>
@@ -43,30 +46,30 @@
     <nav class="navbar navbar-expand-lg  nav-bg-color">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/Images/logo.png" class="img-fluid media-logo-width" />
+                <img src="assets/Images/logo.png" class="img-fluid" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto text-center mt-16">
+                <ul class="navbar-nav ml-auto text-center ">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#skill">History</a>
+                        <a class="nav-link scroll" href="#history">History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#services">Services</a>
+                        <a class="nav-link scroll" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#work">Work</a>
+                        <a class="nav-link scroll" href="#port-folio">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#work">Team</a>
+                        <a class="nav-link scroll" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#work">Blog</a>
+                        <a class="nav-link scroll" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#contact">Contact</a>
@@ -93,11 +96,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-65">
-                <div class="col-md-5 offset-md-1 p-0">
-                    <img src="assets/Images/bird.png" class="img-fluid" />
+            <div class="row mt-65 media-history-align">
+                <div class="col-lg-5 offset-lg-1 p-0">
+                    <img src="assets/Images/bird.png" class="img-fluid media-img-vh" />
                 </div>
-                <div class="col-md-5 p-0 ml--4">
+                <div class="col-lg-5 p-0 ml--4">
                     <div class="bg-card card-mt">
                         <div class="owl-carousel owl-theme">
                             <div>
@@ -165,63 +168,187 @@
     </section>
     <section id="service" class="">
         <div class="row">
-            <div class="col-md-6 p-0 text-right">
-                <div id="bg-color-section">
-                    <h2 class="service-text">Our Services</h2>
-                    <div>
-                        <div>
-                            <div class="media mt-70">
-                                <div class="media-body ">
-                                    <h2 class="media-heaing-text">dolor sit amet</h2>
-                                    <p class="media-pera-text">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
-                                    </p>
-                                </div>
-                                <div class="p-relative p-absolute">
-                                    <div class="bg-circle">
-                                        <div class="bg-white-circle">
-                                            <i class="flaticon-tv"></i>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mt-10"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="mt-10"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="mt-10"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6 p-0 text-right">
+                                <div id="bg-color-section">
+                                    <h2 class="service-text">Our Services</h2>
+                                    <div class="media mt-70">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">dolor sit amet</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-tv"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media mt-60">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">quis nostrud</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-stack-of-sheets"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media mt-60">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">nulla pariatur</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-photo-camera"></i>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="media mt-60">
-                                <div class="media-body ">
-                                    <h2 class="media-heaing-text">quis nostrud</h2>
-                                    <p class="media-pera-text">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
-                                    </p>
-                                </div>
-                                <div class="p-relative p-absolute">
-                                    <div class="bg-circle">
-                                        <div class="bg-white-circle">
-                                            <i class="flaticon-stack-of-sheets"></i>
+                            <div class="col-md-6 p-0">
+                                <img src="assets/Images/service-img.png" class="img-fluid ser-img-vh" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 p-0 text-right">
+                                <div id="bg-color-section">
+                                    <h2 class="service-text">Our Services</h2>
+                                    <div class="media mt-70">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">dolor sit amet</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-tv"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media mt-60">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">quis nostrud</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-stack-of-sheets"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media mt-60">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">nulla pariatur</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-photo-camera"></i>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="media mt-60">
-                                <div class="media-body ">
-                                    <h2 class="media-heaing-text">nulla pariatur</h2>
-                                    <p class="media-pera-text">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
-                                    </p>
-                                </div>
-                                <div class="p-relative p-absolute">
-                                    <div class="bg-circle">
-                                        <div class="bg-white-circle">
-                                            <i class="flaticon-photo-camera"></i>
+                            <div class="col-md-6 p-0">
+                                <img src="assets/Images/service-img.png" class="img-fluid ser-img-vh" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 p-0 text-right">
+                                <div id="bg-color-section">
+                                    <h2 class="service-text">Our Services</h2>
+                                    <div class="media mt-70">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">dolor sit amet</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-tv"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media mt-60">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">quis nostrud</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-stack-of-sheets"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media mt-60">
+                                        <div class="media-body ">
+                                            <h2 class="media-heaing-text">nulla pariatur</h2>
+                                            <p class="media-pera-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text eve
+                                            </p>
+                                        </div>
+                                        <div class="p-relative p-absolute">
+                                            <div class="bg-circle">
+                                                <div class="bg-white-circle">
+                                                    <i class="flaticon-photo-camera"></i>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <img src="assets/Images/service-img.png" class="img-fluid ser-img-vh" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 p-0">
-                <img src="assets/Images/service-img.png" class="img-fluid" />
-            </div>
+            <!---->
         </div>
     </section>
     <section id="port-folio" class="mt-100">
@@ -246,23 +373,23 @@
             <div class="row mt-50 media-mt-30">
                 <div class="col-md-12 d-flex flex-wrap justify-content-center galleryFilters">
                     <div class="mt-4 list-inline md-text-align-center" id="myBtnContainer">
-                        <button class="btn-r-0 btn-act btn my-pill filter-active" onclick="filterSelection('all')"> ALL</button>
-                        <button class="btn-r-0 btn-act btn my-pill media-mt" onclick="filterSelection('Tempor')"> Tempor</button>
-                        <button class="btn-r-0 btn-act btn my-pill media-mt" onclick="filterSelection('Nostrud')"> Nostrud</button>
-                        <button class="btn-r-0 btn-act btn my-pill media-mt" onclick="filterSelection('Aliqua')"> Aliqua Pro</button>
-                        <button class="btn-r-0 btn-act btn my-pill media-mt" onclick="filterSelection('Voluptate')"> Voluptate</button>
+                        <button class="btn-act btn my-pill filter-active" onclick="filterSelection('all')"> ALL</button>
+                        <button class="btn-act btn my-pill media-mt" onclick="filterSelection('Tempor')"> Tempor</button>
+                        <button class="btn-act btn my-pill media-mt" onclick="filterSelection('Nostrud')"> Nostrud</button>
+                        <button class="btn-act btn my-pill media-mt" onclick="filterSelection('Aliqua')"> Aliqua Pro</button>
+                        <button class="btn-act btn my-pill media-mt" onclick="filterSelection('Voluptate')"> Voluptate</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-45 w-100 text-center loadMore">
-            <div class="col-md-3 p-0 Tempor no-display item">
+        <div class="row mt-45 text-center">
+            <div class="col-lg-3 col-md-4 p-0 Tempor no-display display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p1.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p1.png" data-lightbox="image-1">
-                                <i class="flaticon-eye link-style"></i>
+                            <a href="assets/Images/portfolio/p1.png" class="link-style" data-lightbox="image-1">
+                                <i class="flaticon-eye "></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
                             <p class="hover-desc-text">
@@ -272,13 +399,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 p-0 Nostrud no-display  item">
+            <div class="col-lg-3 col-md-4 p-0 Nostrud no-display display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p2.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p2.png" data-lightbox="image-1">
-                                <i class="flaticon-eye link-style"></i>
+                            <a href="assets/Images/portfolio/p2.png" class="link-style" data-lightbox="image-1">
+                                <i class="flaticon-eye"></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
                             <p class="hover-desc-text">
@@ -288,13 +415,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 p-0 Tempor no-display  item">
+            <div class="col-lg-3 col-md-4 p-0 Tempor no-display  display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p3.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p3.png" data-lightbox="image-1">
-                                <i class="flaticon-eye link-style"></i>
+                            <a href="assets/Images/portfolio/p3.png" class="link-style" data-lightbox="image-1">
+                                <i class="flaticon-eye"></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
                             <p class="hover-desc-text">
@@ -304,12 +431,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 p-0 Nostrud no-display  item">
+            <div class="col-lg-3 col-md-4 p-0 Nostrud no-display  display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p4.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p4.png" data-lightbox="image-1">
+                            <a href="assets/Images/portfolio/p4.png" class="link-style" data-lightbox="image-1">
                                 <i class="flaticon-eye link-style"></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
@@ -320,13 +447,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 p-0 Aliqua no-display  item">
+            <div class="col-lg-3 col-md-4 p-0 Aliqua no-display  display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p5.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p5.png" data-lightbox="image-1">
-                                <i class="flaticon-eye link-style"></i>
+                            <a href="assets/Images/portfolio/p5.png" class="link-style" data-lightbox="image-1">
+                                <i class="flaticon-eye"></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
                             <p class="hover-desc-text">
@@ -336,13 +463,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 p-0 Aliqua no-display  item">
+            <div class="col-lg-3 col-md-4 p-0 Aliqua no-display  display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p6.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p6.png" data-lightbox="image-1">
-                                <i class="flaticon-eye link-style"></i>
+                            <a href="assets/Images/portfolio/p6.png" class="link-style" data-lightbox="image-1">
+                                <i class="flaticon-eye"></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
                             <p class="hover-desc-text">
@@ -352,13 +479,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 p-0 Voluptate no-display  item">
+            <div class="col-lg-3 col-md-4 p-0 Voluptate no-display  display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p7.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p7.png" data-lightbox="image-1">
-                                <i class="flaticon-eye link-style"></i>
+                            <a href="assets/Images/portfolio/p7.png" class="link-style" data-lightbox="image-1">
+                                <i class="flaticon-eye"></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
                             <p class="hover-desc-text">
@@ -368,13 +495,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 p-0 Voluptate no-display  item">
+            <div class="col-lg-3 col-md-4 p-0 Voluptate no-display  display-no">
                 <div class="containing">
                     <img src="assets/Images/portfolio/p8.png" class="img-fluid image" />
                     <div class="overlay">
                         <div class="text text-center">
-                            <a href="assets/Images/portfolio/p8.png" data-lightbox="image-1">
-                                <i class="flaticon-eye link-style"></i>
+                            <a href="assets/Images/portfolio/p8.png" class="link-style" data-lightbox="image-1">
+                                <i class="flaticon-eye"></i>
                             </a>
                             <h2 class="hover-heading-text mt-25">Labore et dolore magnam </h2>
                             <p class="hover-desc-text">
@@ -384,23 +511,237 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="text-center mt-70">
-                <button type="button" class="btn btn-load-more">View More</button>
-            </div>-->
+        </div>
+        <div class="text-center mt-70">
+            <button class="btn btn-load-more" id="load-more">View More</button>
         </div>
     </section>
-    <section class="mt-300"></section>
+    <section id="team" style="background-image: url('assets/Images/team-banner.png');" class="mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <div class="history-position-relative">
+                        <img src="assets/Images/arrows/arrow-next.png" class="image-position-absolute-one" />
+                        <h2 class="team-text">Our Team</h2>
+                        <img src="assets/Images/arrows/arrow-prev.png" class="image-position-absolute-two" />
+                    </div>
+                    <p class="team-pera-text mt-20">
+                        Meet the craziest team. Share your thoughts with them.
+                    </p>
+                    <div class="line-position-relative">
+                        <p class="below-line"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="team-position-relative ">
+                <div class="image-circle team-position-absolute below-img-line">
+                    <img src="assets/Images/team/t1.png" class="img-fluid" />
+                    <div class="mt-96">
+                        <h2 class="team-member-name">Sandra Lust</h2>
+                        <p class="team-desgination">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="image-circle team-position-absolute-1 below-img-line">
+                    <img src="assets/Images/team/t2.png" class="img-fluid img-radius" />
+                    <div class="mt-96">
+                        <h2 class="team-member-name">Saqib Shakeel</h2>
+                        <p class="team-desgination">UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="image-circle team-position-absolute-2 below-img-line">
+                    <img src="assets/Images/team/t3.png" class="img-fluid" />
+                    <div class="mt-96">
+                        <h2 class="team-member-name">Umair Shanwari</h2>
+                        <p class="team-desgination">Stack Developer</p>
+                    </div>
+                </div>
+                <div class="image-circle team-position-absolute-3 below-img-line">
+                    <img src="assets/Images/team/t4.png" class="img-fluid" />
+                    <div class="mt-96">
+                        <h2 class="team-member-name">Neuro Bajwa</h2>
+                        <p class="team-desgination">Project Manager</p>
+                    </div>
+                </div>
+                <div class="image-circle team-position-absolute-4 below-img-line">
+                    <img src="assets/Images/team/t5.png" class="img-fluid" />
+                    <div class="mt-96">
+                        <h2 class="team-member-name">Usman Khan</h2>
+                        <p class="team-desgination">.Net Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="mt-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <div class="history-position-relative">
+                        <img src="assets/Images/arrows/arrow-next.png" class="image-position-absolute-one" />
+                        <h2 class="blog-text">Blog</h2>
+                        <img src="assets/Images/arrows/arrow-prev.png" class="image-position-absolute-two" />
+                    </div>
+                    <p class="blog-pera-text mt-20">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="line-position-relative">
+                        <p class="below-line"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-55">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 media-blog-margin-top">
+                    <div class="card">
+                        <div class="card-position-relative">
+                            <img src="assets/Images/blog/b1.png" class="img-fluid" />
+                            <div class="blog-bg-color">
+                                <h2>16 <br /> Dec</h2>
+                            </div>
+                        </div>
+                        <div class="card-body text-left">
+                            <h2 class="card-heading-text">labore et dolore magna aliqua</h2>
+                            <p class="comments">
+                                In Fashion, Clothing | No Comments
+                            </p>
+                            <p class="blog-desc comments-space">
+                                The Love Boat soon will making another the Love Boat promises something...
+                                The Love Boat soon will making another the Love Boat promises something.
+                            </p>
+                            <!--<a href="#" class="contniue-reading read-style">Continue Reading</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 media-blog-margin-top">
+                    <div class="card">
+                        <div class="card-position-relative">
+                            <img src="assets/Images/blog/b2.png" class="img-fluid" />
+                            <div class="blog-bg-color">
+                                <h2>17 <br /> Dec</h2>
+                            </div>
+                        </div>
+                        <div class="card-body text-left">
+                            <h2 class="card-heading-text">labore et dolore magna aliqua</h2>
+                            <p class="comments">
+                                In Fashion, Clothing | No Comments
+                            </p>
+                            <p class="blog-desc comments-space">
+                                The Love Boat soon will making another the Love Boat promises something...
+                                The Love Boat soon will making another the Love Boat promises something.
+                            </p>
+                            <!--<a href="#" class="contniue-reading read-style">Continue Reading</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 media-blog-mt media-blog-margin-top">
+                    <div class="card">
+                        <div class="card-position-relative">
+                            <img src="assets/Images/blog/b3.png" class="img-fluid" />
+                            <div class="blog-bg-color">
+                                <h2>18 <br /> Dec</h2>
+                            </div>
+                        </div>
+                        <div class="card-body text-left">
+                            <h2 class="card-heading-text">labore et dolore magna aliqua</h2>
+                            <p class="comments">
+                                In Fashion, Clothing | No Comments
+                            </p>
+                            <p class="blog-desc comments-space">
+                                The Love Boat soon will making another the Love Boat promises something...
+                                The Love Boat soon will making another the Love Boat promises something.
+                            </p>
+                            <!--<a href="#" class="contniue-reading read-style">Continue Reading</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="background-image: url('assets/Images/contact-banner.png');" class="mt-91">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <div class="mt-24">
+                        <a href="index.html" class="link-style">
+                            <img src="assets/Images/footer-logo.png" class="img-fluid" />
+                        </a>
+                    </div>
+                    <h2 class="step-text mt-40">Take <span class="step-color"> the Next</span> Step</h2>
+                    <p class="step-text-desc mt-90">
+                        Do you need <span class="step-desc-color">our help to</span> your brand <span class="step-desc-color">to its fullest</span> potential?
+                        <span class="step-desc-color">Let us </span>know how we can <span class="step-desc-color"> help you</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 mt-70">
+                    <div class="contact-bg-color">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group floating-control-group">
+                                        <label for="name" class="label-style">Name</label>
+                                        <input type="text" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group floating-control-group mt-48">
+                                        <label for="email" class="label-style">Email</label>
+                                        <input type="email" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group mt-48">
+                                        <label for="message" class="label-style">Message</label>
+                                        <textarea class="form-control text-area" rows="5" required="" placeholder="Enter your message here"></textarea>
+                                    </div>
+                                    <div class="mt-60 text-center">
+                                        <button type="submit" class="btn btn-submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <div>
+                            <a href="#" class="link-style">
+                                <i class="flaticon-tumblr"></i>
+                            </a>
+                            <a href="" class="link-style">
+                                <i class="flaticon-facebook"></i>
+                            </a>
+                            <a href="#" class="link-style">
+                                <i class="flaticon-google-plus"></i>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <p class="footer-font">&copy; All rights reserved. Bizinabox</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!------------------- JQuery Files Section ------------------->
     <script src="assets/Bootstrap4/js/jquery.slim.min.js"></script>
     <script src="assets/Bootstrap4/js/poper.min.js"></script>
     <script src="assets/Bootstrap4/js/bootstrap.min.js"></script>
     <script src="assets/Bootstrap4/js/owl.carousel.min.js"></script>
+    <script src="assets/Bootstrap4/js/slick.min.js"></script>
     <script src="assets/Bootstrap4/LightBox/dist/js/lightbox.min.js"></script>
     <script src="assets/Bootstrap4/js/loadMoreResults.js"></script>
     <script src="assets/Bootstrap4/js/jquery-ui.js"></script>
     <script src="assets/Bootstrap4/js/smoothscroll.js"></script>
     <script src="assets/Bootstrap4/js/scrollinToview.js"></script>
     <script src="assets/Bootstrap4/js/wow.min.js"></script>
+    <script src="assets/Bootstrap4/js/floating.labels.min.js"></script>
     <script src="assets/Bootstrap4/js/script.js"></script>
     <script type="text/javascript">new WOW().init();</script>
 </body>
