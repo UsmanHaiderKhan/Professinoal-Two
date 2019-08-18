@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 /*
@@ -9,7 +9,7 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Roboto', sans-serif;
 
 */
-/*================================= 
+/*=================================
         Font-Family's End
   =================================*/
 
@@ -23,11 +23,11 @@ html, body {
 }
 
 
-/*================================= 
+/*=================================
     Navbar Section Styling
   =================================*/
 #home {
-    padding: 265px 0;
+    padding: 139px 0 315px 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ html, body {
 
 #home .do-text {
     left: 31%;
-    top: 43px;
+    top: 29px;
     position: absolute;
     font-size: 26px;
     color: #383838;
@@ -91,14 +91,14 @@ html, body {
 
 #home .home-first-img {
     position: absolute;
-    bottom: -71px;
-    left: 129px;
+    bottom: -55px;
+    left: 137px;
 }
 
 #home .home-second-img {
     position: absolute;
-    bottom: -71px;
-    right: 129px;
+    bottom: -55px;
+    right: 137px;
 }
 
 #home .ver-setting {
@@ -233,7 +233,7 @@ html, body {
     width: 100%;
 }
 
-/*================================= 
+/*=================================
        History Section Styling
   =================================*/
 #history {
@@ -365,9 +365,13 @@ html, body {
     }
 
 #history [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    margin-left: 9px;
+    top: -104px;
     color: #c6e8e5;
-    font-size: 22px;
+    font-size: 31px;
+    position: absolute;
+    transform: rotate(-137deg);
+    bottom: 2px;
+    left: 45px;
 }
 
 #history .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -382,7 +386,7 @@ html, body {
     margin-top: 3.5rem;
 }
 
-/*================================= 
+/*=================================
        Service Section Styling
   =================================*/
 #bg-color-section {
@@ -434,8 +438,8 @@ html, body {
 }
 
 .bg-white-circle {
-    width: 64px;
-    height: 64px;
+    width: 65px;
+    height: 66px;
     border-radius: 50%;
     background-color: #f4f5f9;
 }
@@ -490,7 +494,7 @@ html, body {
     }
 
 
-/*================================= 
+/*=================================
      Portfolio Section Styling
   =================================*/
 .portfolio-pera-text {
@@ -656,7 +660,7 @@ html, body {
 }
 
 
-/*================================= 
+/*=================================
         Team Section Styling
   =================================*/
 #team {
@@ -808,6 +812,7 @@ html, body {
         display: block;
     }
 
+
 .team-member-name {
     display: none;
     font-size: 11px;
@@ -832,7 +837,7 @@ html, body {
     -webkit-transform: matrix( 1.17795530306889,0,0,1.16434052535848,0,0);
     -ms-transform: matrix( 1.17795530306889,0,0,1.16434052535848,0,0);
 }
-/*================================= 
+/*=================================
        Blog Section Styling
   =================================*/
 #blog .blog-pera-text {
@@ -960,7 +965,7 @@ html, body {
 /*#blog .card-position-absolute {
     position: absolute;
 }*/
-/*================================= 
+/*=================================
       Contact Section Styling
   =================================*/
 #contact {
@@ -1076,7 +1081,7 @@ html, body {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
 }
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 .comments-spaces {
@@ -1614,17 +1619,58 @@ button:focus {
     list-style: none;
 }
 /*================ Media Query ===============*/
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) and (min-width: 1440px) {
+
     .team-position-absolute-4 {
-        bottom: 333px;
+        bottom: 314px;
+        left: 96%;
     }
 
     .team-position-absolute-3 {
         bottom: 112px;
     }
+
+    .team-position-absolute-1 {
+        bottom: -69px;
+    }
 }
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1440px) {
+    .team-position-absolute-4 {
+        bottom: 329px;
+        left: 94%;
+    }
+}
+
+@media screen and (max-width: 1191px) {
+
+    .hover-desc-text {
+        font-size: 14px;
+    }
+
+    .team-position-absolute-1 {
+        bottom: -113px;
+        left: 230px;
+    }
+
+    .team-position-absolute {
+        bottom: -149px;
+    }
+
+    .team-position-absolute-2 {
+        right: -462px;
+        bottom: 5px;
+    }
+
+    .team-position-absolute-3 {
+        bottom: 100px;
+        left: 662px;
+    }
+
+    .team-position-absolute-4 {
+        bottom: 30px;
+        left: 87%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -2138,7 +2184,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     #home .wait-text {
         font-size: 16px;
     }
@@ -2324,7 +2370,154 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 635px) {
+    #home .wait-text {
+        font-size: 15px;
+    }
+
+    #home .main-banner-text {
+        font-size: 28px;
+    }
+
+    #home .ver-setting {
+        left: 43%;
+    }
+
+    .navbar {
+        padding: 20px 20px;
+    }
+
+    .image-position-absolute-one {
+        left: 7%;
+    }
+
+    .image-position-absolute-two {
+        right: 7%;
+    }
+
+    .bg-color {
+        margin-left: 40%;
+    }
+
+    #history {
+        padding: 30px;
+    }
+
+    .heading-text {
+        font-size: 15px;
+    }
+
+    .media-ml-read {
+        margin-left: 33%;
+    }
+
+    .btn-read {
+        font-size: 12px;
+        width: 110px;
+        height: 38px;
+        line-height: 24px;
+    }
+
+    #bg-color-section {
+        padding: 60px 133px 60px 84px;
+    }
+
+    #service .ser-img-vh {
+        height: 61vh;
+    }
+
+    #service .carousel-indicators {
+        left: -38px;
+    }
+
+    .portfolio-text {
+        letter-spacing: 2px;
+        font-size: 24px;
+    }
+
+    .hover-heading-text {
+        font-size: 20px;
+    }
+
+    .hover-desc-text {
+        font-size: 18px;
+    }
+
+    #service .p-absolute {
+        right: 40px;
+    }
+
+    #team {
+        padding: 95px 0 320px 0;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+        #team .team-pera-text {
+            font-size: 18px;
+        }
+
+    .team-position-absolute {
+        bottom: -399px;
+        left: 6%;
+    }
+
+    .team-position-absolute-1 {
+        bottom: -307px;
+        left: 276px;
+    }
+
+    .team-position-absolute-2 {
+        right: -155px;
+        bottom: 36px;
+    }
+
+    .team-position-absolute-3 {
+        bottom: 207px;
+        left: 28px;
+    }
+
+    .team-position-absolute-4 {
+        bottom: 305px;
+        left: 70%;
+    }
+
+    #blog .image-position-absolute-one {
+        left: 28%;
+    }
+
+    #blog .image-position-absolute-two {
+        right: 28%;
+    }
+
+    #blog .blog-text {
+        letter-spacing: 3px;
+        font-size: 25px;
+    }
+
+    .media-blog-mt {
+        margin-top: 0;
+    }
+
+    .media-blog-margin-top {
+        margin-top: 30px;
+    }
+
+    .step-text {
+        font-size: 30px;
+    }
+
+    #contact .contact-bg-color {
+        padding: 66px 32px;
+    }
+
+    .step-text-desc {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 415px) {
     #home .wait-text {
         font-size: 15px;
     }
@@ -2474,7 +2667,7 @@ button:focus {
 @media screen and (max-width: 411px) {
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     #home .home-second-img {
         bottom: -71px;
         right: 26px;
@@ -2515,7 +2708,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
     #home .home-second-img {
         bottom: -71px;
         right: 26px;
@@ -2608,7 +2801,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 824px) and (orientation: landscape) {
     #home .wait-text {
         font-size: 16px;
     }
@@ -2917,7 +3110,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 731px) and (orientation: landscape) {
+@media screen and (max-width: 732px) and (orientation: landscape) {
     #home .do-text {
         left: 25.5%;
     }
@@ -2988,7 +3181,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
     #home .do-text {
         left: 28.5%;
     }
@@ -3063,7 +3256,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
     #home .do-text {
         left: 28.5%;
     }
